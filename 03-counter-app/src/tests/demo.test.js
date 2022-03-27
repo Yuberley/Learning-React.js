@@ -6,7 +6,7 @@ describe('Test on file demo.test.js ', () => {
     
         const messageTwo = `test message`;
     
-        expect(messageOne).toBe(messageTwo);
-    
+        expect( messageOne ).toBe( messageTwo );
+      
     })
 })
