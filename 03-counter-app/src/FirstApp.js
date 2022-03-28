@@ -16,7 +16,7 @@ FirstApp.propTypes = {
 }
 
 FirstApp.defaultProps = {
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur adipss'
+    subtitle: 'Lorem ipsum dolor sit amet, consectetur adips'
 }
 
 export default FirstApp;
