@@ -1,10 +1,9 @@
 
 import {createSerializer} from 'enzyme-to-json';
-expect.addSnapshotSerializer(createSerializer({mode: 'deep'}));
-
 import Enzyme from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
+// import '@testing-library/jest-dom/extend-expect';
+
 
 Enzyme.configure({ adapter: new Adapter() });
-
-// import '@testing-library/jest-dom/extend-expect';
+expect.addSnapshotSerializer(createSerializer({mode: 'deep'}));

@@ -5,8 +5,8 @@ const FirstApp = ({greet, subtitle}) => {
 
     return (
         <>
-            <h1> { greet } </h1>
-            <p> { subtitle }</p>
+            <h1>{ greet }</h1>
+            <p>{ subtitle }</p>
         </>
     );
 }
@@ -16,7 +16,7 @@ FirstApp.propTypes = {
 }
 
 FirstApp.defaultProps = {
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur adips'
+    subtitle: 'Lorem ipsum dolor sit amet, consectetur'
 }
 
 export default FirstApp;
