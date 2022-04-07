@@ -1,22 +1,31 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export const Message = () => {
 
-    useEffect(() => {
-    
-        console.info('Mounted component');
-    
-      return () => {
+    const [ coords, setCoords] = useState({x: 0, y: 0});
+    const { x, y } = coords;
 
-        console.info('Unmounted component');
+    // Mount and unmount effects
+	useEffect(() => {
 
-      }
-    }, [])
-    
+		const mouseMove = (e) => {
+            const coords = { x: e.x, y: e.y };
+            setCoords(coords);
+        }
+
+        window.addEventListener('mousemove', mouseMove)
+
+		return () => {
+			window.removeEventListener( 'mousemove', mouseMove );
+		};
+	}, []);
 
 	return (
 		<>
-			<h3>Great!</h3>
+			<h3>Positivo!</h3>
+            <p>
+                x: { x } y { y }
+            </p>
 		</>
 	);
 };
