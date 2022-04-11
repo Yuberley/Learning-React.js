@@ -5,6 +5,7 @@ export const Message = () => {
     const [ coords, setCoords] = useState({x: 0, y: 0});
     const { x, y } = coords;
 
+
     // Mount and unmount effects
 	useEffect(() => {
 
@@ -19,6 +20,11 @@ export const Message = () => {
 			window.removeEventListener( 'mousemove', mouseMove );
 		};
 	}, []);
+
+	const person = { name: 'Juan',
+					 email: 'perez@gmail.com',
+					 phone: '123456789',
+					 address: 'Calle 123', }
 
 	return (
 		<>
