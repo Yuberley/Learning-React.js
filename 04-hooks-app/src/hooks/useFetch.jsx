@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 
-
 export const useFetch = ( url ) => {
 
 	// useRef is a hook that allows us to store a reference to a value
