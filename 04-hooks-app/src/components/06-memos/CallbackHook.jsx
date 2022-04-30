@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from 'react';
+import { ShowIncrement } from './ShowIncrement';
 
 import '../02-useEffect/effects.css';
-import { ShowIncrement } from './ShowIncrement';
 
 
 export const CallbackHook = () => {
