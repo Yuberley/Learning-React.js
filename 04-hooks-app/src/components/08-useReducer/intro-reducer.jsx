@@ -38,10 +38,4 @@ const action = {
 
 let todos = todoReducer();
 
-console.log(todos);
-
 todos = todoReducer(todos, action);
-
-console.log(todos);
-
-
