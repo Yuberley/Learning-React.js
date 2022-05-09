@@ -1,7 +1,8 @@
 
 
 export const todoReducer = (state = [], action) => {
-    switch (action.type) {
+
+    switch (action?.type) {
         case 'ADD_TODO':
             return [...state, {
                 id: action.id,
@@ -24,4 +25,5 @@ export const todoReducer = (state = [], action) => {
         default:
             return state;
     }
+    
 }
